@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TemperatureWarn</string>
+    <string-array name="update_frequency_options">
+        <item>5</item>
+        <item>7</item>
+        <item>20</item>
+        <item>60</item>
+        <item>0</item>
+    </string-array>
+</resources>

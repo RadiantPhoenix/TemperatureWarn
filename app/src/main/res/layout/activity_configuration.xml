@@ -1,0 +1,70 @@
+<!-- res/layout/activity_configuration.xml -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/main_theme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_theme" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/steampunk_font"
+            android:textColor="@color/bronze"
+            android:textSize="16sp"
+            android:text="Enter threshold Temperature:" />
+
+        <EditText
+            android:id="@+id/edit_threshold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bronze"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:fontFamily="@font/steampunk_font"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/steampunk_font"
+            android:textColor="@color/bronze"
+            android:textSize="16sp"
+            android:text="Select update frequency:" />
+
+        <Spinner
+            android:id="@+id/frequencySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/steampunk_font"
+            android:textColor="@color/bronze"
+            android:textSize="16sp"
+            android:popupBackground="@color/black"
+            android:entries="@array/update_frequency_options" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/steampunk_font"
+            android:textColor="@color/bronze"
+            android:textSize="18sp"
+            android:text="SAVE SETTINGS" />
+
+    </LinearLayout>
+</FrameLayout>
